@@ -5,7 +5,6 @@
 
 ## Project Config 🖥
 Craft keeps track of each project’s configuration in a central store called **project config**.
-
 As you make changes to system settings (such as create sections, fields, volumes, etc.), Craft will record those setting values to YAML files in a `config/project/` folder. You can then commit those files to your Git repository, just like your templates and front-end resources.
 
 It offers two benefits:
@@ -40,7 +39,7 @@ It offers two benefits:
 1. **(DEV1)** will go to `Utilities -> Project Config` and click the `Rebuild` button to ensure that its project config is up to date with settings stored throughout the database.
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/screenshots/rebuild.png?raw=true)
 2. Back up the database and share the dump with others developers. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/database.png?raw=true)
-3. Commit and push changes. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/git.png?raw=true)
+3. Commit and push changes.![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/screenshots/git.png?raw=true)
 
 ### (Developer 2) 👨‍💻
 1. Clone the repo.
@@ -49,10 +48,57 @@ It offers two benefits:
 
 ## Propagating changes between developers 💻 🔄 💻
 
-Everytime a developer make changes in a development environment, the contents of the `config/project/` folder are updated to reflect those changes. Commit those files to your Git repository just like your templates, front-end resources, and other project files.
+Everytime a developer make changes in her/his local environment, the contents of the `config/project/` folder are updated to reflect those changes. The developer should commit and push those files to the Git repository just like templates, front-end resources, and other project files.
+The other developer(s) should pull those changes and import them to her/his local installation in one of two ways:
 
+- From the “Project Config” utility in the control panel.
+- By running the `php craft project-config/apply` terminal command.
+
+Either way, Craft will compare the files in the local `config/project/` folder with its already-loaded project config, and apply whatever new changes it finds.
 
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/project-config.png?raw=true)
+
+##### NOTE: Sensitive Information Could Be Saved in Project Config YAML
+Some of your system components may require sensitive information in their settings, such as:
+- a Gmail/SMTP password in your email settings
+- a secret access key in an AWS S3 volume
+
+To prevent those values from being saved into your YAML files, make sure you’re setting those fields to environment variables.
+
+----
+
+## Git branching
+
+When working collaborativelly, we need to keep an strict order in our git branching.
+A branching strategy is a convention or a set of rules that specify when branches get created. It helps teams and developers by describing the naming guidelines of branches and elaborates on what use the branches should have, and so on.
+With a lack of appropriate naming conventions, the code maintenance team suffers numerous confusions and complications.
+Git branching naming convention supports the organic growth of a codebase in a systematic way. It helps in separating the work strategically.
+
+#### Branching categories
+
+##### Regular branches
+Available permanently in the repository, the naming convention of regular branches is easy and straightforward.
+
+**development**: The main development branch, restricts developers from adding any changes in the master branch directly. Before merging to the master, changes made in the dev branch undergo reviews and tests.
+
+**master**: The default branch available in the Git repository. Team members need to keep the master branch stable and updated. It usually is stable and doesn't allow direct check-in/push. Merging is possible only after code review.
+
+##### Temporary branches
+Team members can create and delete these branches whenever it is required. Supporting branches are used to aid parallel development between team members, ease tracking of features, and to assist in quickly fixing live production problems. Unlike the main branches, these branches always have a limited life time, since they will be removed eventually.
+
+- **Feature Branches:** Feature branches are used when developing a new feature or enhancement which has the potential of a development lifespan longer than a single deployment.
+- **Hot Fix:** A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment.
+- **Bug Fix:** Bug branches differ from feature branches only semantically. Bug branches will be created when there is a bug on the live site that should be fixed and merged into the next deployment.
+
+##### Branch Flow Examples
+- Example One
+![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/branch-flow-1.png?raw=true)
+- Example Two
+![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/branch-flow-2.png?raw=true)
+
+All involved developers will create feature branches to work in an specific area/component of the site. When the changes are ready the developer will export configuration, and will push the YAML files, templates, styles, scripts, etc.
+
+After pushing the changes a merge request will be created from the feature branch to development.
 
 -----
 [Let's make some magic](https://heyblackmagic.com/work) 🧙‍♂️🧙✨ MAKING THE INTERNET A HAPPIER PLACE 💫
