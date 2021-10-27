@@ -38,8 +38,8 @@ It offers two benefits:
 
 1. **(DEV1)** will go to `Utilities -> Project Config` and click the `Rebuild` button to ensure that its project config is up to date with settings stored throughout the database.
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/screenshots/rebuild.png?raw=true)
-2. Back up the database and share the dump with others developers. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/database.png?raw=true)
-3. Commit and push changes.![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/git.png?raw=true)
+2. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/database.png?raw=true) Back up the database and share the dump with others developers.
+3. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/git.png?raw=true) Commit and push changes.
 
 ### (Developer 2) 👨‍💻
 1. Clone the repo.
@@ -86,15 +86,15 @@ Available permanently in the repository, the naming convention of regular branch
 ##### Temporary branches 🗃
 Team members can create and delete these branches whenever it is required. Supporting branches are used to aid parallel development between team members, ease tracking of features, and to assist in quickly fixing live production problems. Unlike the main branches, these branches always have a limited life time, since they will be removed eventually.
 
-📘 - **Feature Branches:** Feature branches are used when developing a new feature or enhancement which has the potential of a development lifespan longer than a single deployment. 
-📕 - **Hot Fix:** A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment.
+📘 - **Feature Branches:** Feature branches are used when developing a new feature or enhancement which has the potential of a development lifespan longer than a single deployment. <br>
+📕 - **Hot Fix:** A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment.<br>
 📙 - **Bug Fix:** Bug branches differ from feature branches only semantically. Bug branches will be created when there is a bug on the live site that should be fixed and merged into the next deployment.
 
 #### Branch Flow Examples 🔍
 - Example One
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/branch-flow-1.png?raw=true)
 ---
-- Example Two <br>
+- Example Two <br> <br>
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/branch-flow-2.png?raw=true)
 
 All involved developers will create feature branches to work in an specific area/component of the site. When the changes are ready the developer will export configuration, and will push the YAML files, templates, styles, scripts, etc.
