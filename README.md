@@ -86,9 +86,9 @@ Available permanently in the repository, the naming convention of regular branch
 ##### Temporary branches 🗃
 Team members can create and delete these branches whenever it is required. Supporting branches are used to aid parallel development between team members, ease tracking of features, and to assist in quickly fixing live production problems. Unlike the main branches, these branches always have a limited life time, since they will be removed eventually.
 
-📘 - **Feature Branches:** Feature branches are used when developing a new feature or enhancement which has the potential of a development lifespan longer than a single deployment. <br>
-📕 - **Hot Fix:** A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment.<br>
-📙 - **Bug Fix:** Bug branches differ from feature branches only semantically. Bug branches will be created when there is a bug on the live site that should be fixed and merged into the next deployment.
+ - 📘 **Feature Branches:** Feature branches are used when developing a new feature or enhancement which has the potential of a development lifespan longer than a single deployment. <br>
+ - 📕 **Hot Fix:** A hotfix branch comes from the need to act immediately upon an undesired state of a live production version. Additionally, because of the urgency, a hotfix is not required to be be pushed during a scheduled deployment. <br>
+ - 📙 **Bug Fix:** Bug branches differ from feature branches only semantically. Bug branches will be created when there is a bug on the live site that should be fixed and merged into the next deployment.
 
 #### Branch Flow Examples 🔍
 - Example One
