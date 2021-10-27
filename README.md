@@ -1,7 +1,7 @@
 # Craft CMS Collaborative Flow Proposal ✨
 [![N|Solid](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/assets/BM-logo.png?token=AM5G2YUBVWL2PQKKHN3FG2LBNITGU)](https://heyblackmagic.com/)
 
-> 📌 The most important topic when working collaboratively is the database configuration replication between two or more installations. To handle this part we can use the Craft CMS Project Config characteristic.
+> The most important topic when working collaboratively is the database configuration replication between two or more installations. To handle this part we can use the Craft CMS Project Config characteristic. 📌 
 
 ## Project Config 🖥
 Craft keeps track of each project’s configuration in a central store called **project config**.
@@ -54,4 +54,5 @@ Everytime a developer make changes in a development environment, the contents of
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/project-config.png?raw=true)
 
 -----
-MAKING THE INTERNET A HAPPIER PLACE 💫  [Let's make some magic](https://heyblackmagic.com/work) 🧙‍♂️🧙✨
+MAKING THE INTERNET A HAPPIER PLACE 💫
+[Let's make some magic](https://heyblackmagic.com/work) 🧙‍♂️🧙✨
