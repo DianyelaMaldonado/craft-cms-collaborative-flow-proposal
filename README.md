@@ -35,7 +35,7 @@ It offers two benefits:
 ### (Developer 1)
 1. One developer (let's call her/him **DEV1**) will create and configure the GitHub repository in her/his local enviroment as it is normally done, the difference in the configuration is that in the  *`.gitignore`* file the `cms` directory will not be ignored. You can use `gitignore.example` file in this repository.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/screenshots/git-ignore.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/screenshots/git-ignore.png?raw=true)
 
 1. **(DEV1)** will go to `Utilities -> Project Config` and click the `Rebuild` button to ensure that its project config is up to date with settings stored throughout the database.
 2. Back up the database and share the dump with others developers.
@@ -51,7 +51,7 @@ It offers two benefits:
 Everytime a developer make changes in a development environment, the contents of the `config/project/` folder are updated to reflect those changes. Commit those files to your Git repository just like your templates, front-end resources, and other project files.
 
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/project-config.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/project-config.png?raw=true)
 
 
 
