@@ -54,5 +54,4 @@ Everytime a developer make changes in a development environment, the contents of
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/project-config.png?raw=true)
 
 -----
-MAKING THE INTERNET A HAPPIER PLACE 💫
-[Let's make some magic](https://heyblackmagic.com/work) 🧙‍♂️🧙✨
+[Let's make some magic](https://heyblackmagic.com/work) 🧙‍♂️🧙✨ MAKING THE INTERNET A HAPPIER PLACE 💫
