@@ -39,7 +39,7 @@ It offers two benefits:
 
 1. **(DEV1)** will go to `Utilities -> Project Config` and click the `Rebuild` button to ensure that its project config is up to date with settings stored throughout the database.
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/screenshots/rebuild.png?raw=true)
-2. Back up the database and share the dump with others developers.
+2. Back up the database and share the dump with others developers. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/database.png?raw=true)
 3. Commit and push changes. ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/git.png?raw=true)
 
 ### (Developer 2) 👨‍💻
