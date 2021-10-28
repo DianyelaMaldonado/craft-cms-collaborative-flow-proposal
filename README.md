@@ -91,7 +91,7 @@ Team members can create and delete these branches whenever it is required. Suppo
  - 📙 **Bug Fix:** Bug branches differ from feature branches only semantically. Bug branches will be created when there is a bug on the live site that should be fixed and merged into the next deployment.
 
 #### Branch Flow Examples 🔍
-- Example One
+- Example One <br>
 ![alt text](https://github.com/DianyelaMaldonado/craft-cms-collaborative-flow-proposal/blob/development/src/assets/branch-flow-1.png?raw=true)
 ---
 - Example Two <br> <br>
@@ -100,6 +100,8 @@ Team members can create and delete these branches whenever it is required. Suppo
 All involved developers will create feature branches to work in an specific area/component of the site. When the changes are ready the developer will export configuration, and will push the YAML files, templates, styles, scripts, etc.
 
 After pushing the changes a merge request will be created from the feature branch to development.
+
+The recommendation is that a Technical leader in the project configure the master branch to prevent direct code push, so all the code will be deployed to master branch only by pull request previously approved by the reviewer.
 
 -----
 [Let's make some magic](https://heyblackmagic.com/work) 🧙‍♂️🧙✨ MAKING THE INTERNET A HAPPIER PLACE 💫
