@@ -1,0 +1,4 @@
+node_modules
+.DS_store
+dev/.DS_store
+dev/assets/.DS_store
